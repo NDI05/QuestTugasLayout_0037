@@ -17,6 +17,16 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun landingPage(modifier: Modifier ){
+    data class CardData(
+        val nama: String,
+        val no: String,
+        val alamat: String,
+        val warna: Color,
+        val warnaNo: Color,
+        val warnaAlamat: Color
+    )
+
+
     Column(
         modifier=Modifier
             .fillMaxWidth()
