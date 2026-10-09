@@ -15,18 +15,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.lazy.items
+
+data class CardData(
+    val nama: String,
+    val no: String,
+    val alamat: String,
+    val warna: Color,
+    val warnaNo: Color,
+    val warnaAlamat: Color
+)
 
 @Composable
 fun landingPage(modifier: Modifier ){
-    data class CardData(
-        val nama: String,
-        val no: String,
-        val alamat: String,
-        val warna: Color,
-        val warnaNo: Color,
-        val warnaAlamat: Color
-    )
-
     val listOrang = listOf(
         CardData(
             nama = stringResource(id = R.string.nama1),
@@ -70,14 +71,18 @@ fun landingPage(modifier: Modifier ){
             fontSize = 16.sp,
             fontWeight = FontWeight.Black
         )
-        templateCard(
-            modifier = Modifier,
-            nama = "nama",
-            no = "no",
-            alamat = "alamat",
-            warna = Color.Black,
-            warnaNo = Color.White,
-            warnaAlamat = Color.White
-        )
+        LazyColumn() {
+            items(listOrang){ orang ->
+                templateCard(
+                    modifier = Modifier,
+                    nama = orang.nama,
+                    no = orang.no,
+                    alamat = orang.alamat,
+                    warna = orang.warna,
+                    warnaNo = orang.warnaNo,
+                    warnaAlamat = orang.warnaAlamat
+                )
+            }
+        }
     }
 }
