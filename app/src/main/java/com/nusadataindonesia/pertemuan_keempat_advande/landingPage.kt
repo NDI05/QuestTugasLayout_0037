@@ -2,11 +2,15 @@ package com.nusadataindonesia.pertemuan_keempat_advande
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Text
@@ -61,53 +65,80 @@ fun landingPage(modifier: Modifier ){
             warnaAlamat = colorResource(id = R.color.warnaAlamat3)
         )
     )
-
-    Column(
-        modifier=Modifier
-            .fillMaxHeight()
-            .fillMaxWidth()
-            .padding(vertical = 60.dp, horizontal = 12.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.SpaceEvenly
-    ) {
-        Column() {
-            Text(
-                stringResource(id=R.string.prodi),
-                fontSize = 35.sp,
-                fontWeight = FontWeight.Black
+    Box(
+        modifier= Modifier
+            .fillMaxSize()
+            .background(
+                color = Color.Black
             )
-            Text(
-                stringResource(id=R.string.univ),
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Black
-            )
-        }
-        LazyColumn(
+    ){
+        Column(
             modifier=Modifier
-                .clip(RoundedCornerShape(10.dp))
-                .background(Color.DarkGray)
-                .padding(vertical = 16.dp, horizontal = 8.dp)
+                .fillMaxHeight(1f)
+                .fillMaxWidth(1f)
+                .padding(vertical = 60.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            items(listOrang) { orang ->
-                templateCard(
-                    modifier = Modifier,
-                    nama = orang.nama,
-                    no = orang.no,
-                    alamat = orang.alamat,
-                    warna = orang.warna,
-                    warnaNo = orang.warnaNo,
-                    warnaAlamat = orang.warnaAlamat
+            Row (
+                modifier=Modifier
+                    .fillMaxWidth(1f)
+                    .padding(horizontal = 18.dp)
+            ) {
+                Column(
+                    modifier=Modifier
+                ) {
+                    Text(
+                        stringResource(id=R.string.prodi1),
+                        fontSize = 55.sp,
+                        fontWeight = FontWeight.Black,
+                        color = Color.White
+                    )
+                    Text(
+                        stringResource(id=R.string.prodi2),
+                        fontSize = 55.sp,
+                        fontWeight = FontWeight.Black,
+                        color = Color.White,
+                        modifier= Modifier
+                            .offset(y = -20.dp),
+                    )
+                }
+                Text(
+                    stringResource(id=R.string.univ),
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Red,
+                    lineHeight = 12.sp,
+                    modifier=Modifier
+                        .offset(y = 10.dp)
                 )
             }
-        }
-        Column() {
-            Text(
-                stringResource(id=R.string.copy),
-                color = Color.Black,
-                fontSize = 15.sp,
-                fontWeight = FontWeight.Black,
-                fontFamily = FontFamily.Serif
-            )
+            LazyColumn(
+                modifier=Modifier
+                    .clip(RoundedCornerShape(topStart = 40.dp, topEnd = 40.dp))
+                    .background(Color.White)
+                    .weight(1f)
+                    .padding(vertical = 16.dp, horizontal = 8.dp)
+            ) {
+                items(listOrang) { orang ->
+                    templateCard(
+                        modifier = Modifier,
+                        nama = orang.nama,
+                        no = orang.no,
+                        alamat = orang.alamat,
+                        warna = orang.warna,
+                        warnaNo = orang.warnaNo,
+                        warnaAlamat = orang.warnaAlamat
+                    )
+                }
+            }
+            Column() {
+                Text(
+                    stringResource(id=R.string.copy),
+                    color = Color.White,
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Black
+                )
+            }
         }
     }
 }

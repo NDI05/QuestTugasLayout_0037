@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#121212</color>
     <color name="white">#FFFFFF</color>
-    <color name="warna1">#BA1616</color>
-    <color name="warna2">#DCBF17</color>
-    <color name="warna3">#0DDE25</color>
-    <color name="warnaAlamat1">#1621BA</color>
-    <color name="warnaAlamat2">#17DCCC</color>
-    <color name="warnaAlamat3">#760DDE</color>
-    <color name="warnaNo1">#716709</color>
-    <color name="warnaNo2">#6CDC17</color>
-    <color name="warnaNo3">#0A70BA</color>
+    <color name="warna1">#2D1B1E</color>
+    <color name="warna2">#1E222D</color>
+    <color name="warna3">#1A2826</color>
+    <color name="warnaAlamat1">#E27D60</color>
+    <color name="warnaNo1">#C38D9E</color>
+    <color name="warnaAlamat2">#85DCBA</color>
+    <color name="warnaNo2">#E8A87C</color>
+    <color name="warnaAlamat3">#41B3A3</color>
+    <color name="warnaNo3">#E2A9F3</color>
 </resources>

@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">pertemuan_keempat_advande</string>
-    <string name="prodi">Teknologi Informasi</string>
-    <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="prodi1">TEKNOLOGI</string>
+    <string name="prodi2">INFORMASI</string>
+    <string name="univ">UNIVERSITAS MUHAMMADIYAH YOGYAKARTA</string>
     <string name="nama1">Kaye Karhutla Sumbu Pendek</string>
     <string name="nama2">Tama Sultan Jogja</string>
     <string name="nama3">Ridh(o) Power of IBD</string>
