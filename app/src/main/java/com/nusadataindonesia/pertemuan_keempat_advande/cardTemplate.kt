@@ -2,6 +2,7 @@ package com.nusadataindonesia.pertemuan_keempat_advande
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -20,7 +21,7 @@ fun templateCard(modifier: Modifier, nama: String, nim: String, alamat: String, 
     Card(
         modifier=Modifier
             .padding(16.dp)
-            .fillMaxWidth(1f),
+            .fillMaxWidth(),
         colors = CardDefaults.cardColors(
             containerColor = warna,
             contentColor = Color.White
@@ -28,8 +29,9 @@ fun templateCard(modifier: Modifier, nama: String, nim: String, alamat: String, 
     ) {
         Row (
             modifier = Modifier
-                .padding(all = 10.dp),
-
+                .padding(all = 10.dp)
+                .fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
         ){
             Image(
                 painter = painterResource(id = R.drawable.logos),
