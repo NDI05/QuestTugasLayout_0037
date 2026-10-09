@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -41,6 +42,7 @@ fun templateCard(modifier: Modifier, nama: String, nim: String, alamat: String, 
             Column () {
                 Text(
                     text = nama,
+                    fontFamily = FontFamily.Cursive
                 )
                 Text(
                     text = nim,
