@@ -63,6 +63,30 @@ fun landingPage(modifier: Modifier ){
             warna = colorResource(id = R.color.warna3),
             warnaNo = colorResource(id = R.color.warnaNo3),
             warnaAlamat = colorResource(id = R.color.warnaAlamat3)
+        ),
+        CardData(
+            nama = stringResource(id = R.string.nama3),
+            no = stringResource(id = R.string.no3),
+            alamat = stringResource(id = R.string.alamat3),
+            warna = colorResource(id = R.color.warna3),
+            warnaNo = colorResource(id = R.color.warnaNo3),
+            warnaAlamat = colorResource(id = R.color.warnaAlamat3)
+        ),
+        CardData(
+            nama = stringResource(id = R.string.nama3),
+            no = stringResource(id = R.string.no3),
+            alamat = stringResource(id = R.string.alamat3),
+            warna = colorResource(id = R.color.warna3),
+            warnaNo = colorResource(id = R.color.warnaNo3),
+            warnaAlamat = colorResource(id = R.color.warnaAlamat3)
+        ),
+        CardData(
+            nama = stringResource(id = R.string.nama3),
+            no = stringResource(id = R.string.no3),
+            alamat = stringResource(id = R.string.alamat3),
+            warna = colorResource(id = R.color.warna3),
+            warnaNo = colorResource(id = R.color.warnaNo3),
+            warnaAlamat = colorResource(id = R.color.warnaAlamat3)
         )
     )
     Box(
