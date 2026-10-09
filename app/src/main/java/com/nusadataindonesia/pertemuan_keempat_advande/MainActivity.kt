@@ -21,9 +21,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Pertemuan_keempat_advandeTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     landingPage(
                         modifier = Modifier
+                            .padding(paddingValues = innerPadding)
                     )
                 }
             }
