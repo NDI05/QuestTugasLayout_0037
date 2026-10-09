@@ -11,4 +11,6 @@
     <color name="warna2">#DCBF17</color>
     <color name="warna3">#0DDE25</color>
     <color name="warnaAlamat1">#1621BA</color>
+    <color name="warnaAlamat2">#17DCCC</color>
+    <color name="warnaAlamat3">#760DDE</color>
 </resources>
