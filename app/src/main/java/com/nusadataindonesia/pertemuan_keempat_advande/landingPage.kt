@@ -9,21 +9,28 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun landingPage(modifier: Modifier ){
     Column(
         modifier=Modifier
             .fillMaxWidth()
-            .padding(vertical = 60.dp),
+            .padding(vertical = 120.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Teknologi Informasi"
+            stringResource(id=R.string.prodi),
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Black
         )
         Text(
-            text = "Universitas Muhammadiyah Yogyakarta"
+            stringResource(id=R.string.univ),
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Black
         )
         templateCard(
             modifier = Modifier,
