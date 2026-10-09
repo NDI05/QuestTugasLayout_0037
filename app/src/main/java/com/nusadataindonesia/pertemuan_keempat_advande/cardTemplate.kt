@@ -30,4 +30,27 @@ fun templateCard(modifier: Modifier, nama: String, nim: String, alamat: String, 
             modifier = Modifier
                 .padding(all = 10.dp),
 
+        ){
+            Image(
+                painter = painterResource(id = R.drawable.logos),
+                contentDescription = null,
+
+            )
+            Column () {
+                Text(
+                    text = nama,
+                )
+                Text(
+                    text = nim,
+                )
+                Text(
+                    text = alamat,
+                )
+            }
+            Image(
+                painter = painterResource(id = R.drawable.logos),
+                contentDescription = null
+            )
+        }
+    }
 }
