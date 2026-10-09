@@ -61,7 +61,7 @@ fun templateCard(
             ) {
                 Text(
                     text = nama,
-                    fontSize = 40.sp,
+                    fontSize = 20.sp,
                 )
                 Text(
                     text = no,
